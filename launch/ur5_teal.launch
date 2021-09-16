@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find ur5_teal_bringup)/launch/ur5_teal_driver.launch"/>
+  <include file="$(find ur5_teal_bringup)/launch/ur5_teal_rviz.launch"/>
+  <!-- <node pkg = "ur5_teal_bringup" name="moverobo" type="moverobo.py" output="screen"></node> -->
+
+</launch>

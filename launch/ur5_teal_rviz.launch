@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="$(anon rviz)"  pkg="rviz" type="rviz" respawn="false" args="-d $(find ur5_teal_config)/config/ur5_config.rviz" output="screen"> </node>
+
+  <!-- Launch moveit -->
+  <!-- <include file="$(find ur5_moveit_config)/launch/move_group.launch"></include> -->
+  <include file="$(find ur5_teal_config)/launch/move_group.launch"></include>
+  <!-- <include file="$(find temp)/launch/move_group.launch"></include> -->
+</launch>
