@@ -60,8 +60,8 @@ if __name__ == '__main__':
         # publish and subscribe over ROS.
         rospy.init_node('robot_server')
         result = camera_client()
-        print "Result from camera:", str(result.x/100.0), str(result.y /
-                                                              100.0), str(result.angle)
+        print "Result from camera:", str(result.x/1000.0), str(result.y /
+                                                               1000.0), str(result.angle)
         robo = moveRobo()
         print("Current pos")
         print(robo.getCoordinates())
@@ -85,10 +85,10 @@ if __name__ == '__main__':
         rospy.loginfo(
             "**********************Grabbing the object**********************")
         robo.pos_executor_linear(
-            work1, [[result.x/100.0, -result.y/100.0, 0], [0, 0, result.angle]])
+            work1, [[result.x/1000.0, -result.y/1000.0, 0], [0, 0, result.angle]])
         gripper.update_gripper("close")
         robo.pos_executor_linear(
-            work2, [[result.x/100.0, -result.y/100.0, 0], [0, 0, result.angle]])
+            work2, [[result.x/1000.0, -result.y/1000.0, 0], [0, 0, result.angle]])
         gripper.update_gripper("close")
 
         # Drop Object
