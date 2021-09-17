@@ -14,6 +14,7 @@ import time
 
 class Gripper:
     '''
+    OLD Function
     Availabe commands are:
     gripper_open
     gripper_close
