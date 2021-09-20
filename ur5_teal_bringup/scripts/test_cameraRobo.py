@@ -45,7 +45,7 @@ class cameraActionServer():
 
 def printFunc():
     # return 10, 10, - 22.9955767625
-    return 63, 54, -22.9955767625
+    return 0, 0, 0
 
 
 if __name__ == "__main__":
